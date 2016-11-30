@@ -7,6 +7,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="lib/demoPlayer.js"></script>
   <script src="lib/nav.js"></script>
+  <script src="adLoader.js"></script>
   <link rel="icon" href="img/favicon.ico">
 
   <script>
@@ -59,13 +60,14 @@
 
 
     function loadHome() {
-      createPlayer('fs', 'big-bg', 'bg-video', null);
-      loadTopNav($('ul.navbar-nav'));
-      $('.title').remove();
-      $('.bg-gray').addClass('home');
-      var html = '<div class="home-page-content container"></div>';
-      $('#main').append(html);
-      loadHomeNav($('.home-page-content'))
+      //createPlayer('fs', 'big-bg', 'bg-video', null);
+      //loadTopNav($('ul.navbar-nav'));
+      //$('.title').remove();
+      //$('.bg-gray').addClass('home');
+      //var html = '<div class="home-page-content container"></div>';
+      //$('#main').append(html);
+      //loadHomeNav($('.home-page-content'))
+      //loadPoc1();
     }
     // Load the page configuration file and the startup dynamic pages
     (function() {
@@ -83,7 +85,6 @@
   </script>
 
   <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/test1.css" />
   <link rel="stylesheet" href="https://rawgit.com/brightcove/videojs-thumbnails/master/videojs.thumbnails.css" />
 </head>
 
@@ -112,6 +113,11 @@
   <div class="row">
     <div class="col-md-12">
       <h1 class="title">Videos</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <select class="js-ad-select"><option>-- Select --</option></select>
     </div>
   </div>
 </div>
